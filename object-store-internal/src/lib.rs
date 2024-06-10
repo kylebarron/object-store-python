@@ -476,7 +476,7 @@ impl PyClientOptions {
 pub struct PyObjectStore {
     pub inner: Arc<DynObjectStore>,
     rt: Arc<Runtime>,
-    root_url: String,
+    pub root_url: String,
     options: Option<HashMap<String, String>>,
 }
 
